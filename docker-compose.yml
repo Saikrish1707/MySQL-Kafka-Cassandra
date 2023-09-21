@@ -1,7 +1,7 @@
 version: "2"
 
 networks:
-  ineuron:
+  project:
     driver: bridge
 
 services:
@@ -18,4 +18,4 @@ services:
       - CASSANDRA_PASSWORD_SEEDER=yes
       - CASSANDRA_PASSWORD=cassandra
     networks:
-      - ineuron
+      - project
